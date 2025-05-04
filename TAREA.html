@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>TAREA DE WEB I</title>
+</head>
+<body>
+    
+    
+    
+    <form action="">
+
+        <!-- TAREA 1: Verificar que el campo de nombre solo acepte letras (sin números ni símbolos) usando pattern="[A-Za-z]+". -->
+        
+        <label for="input-nombre">
+            Nombre de una persona
+        </label>
+        <input 
+        type="text"
+        id="input-nombre"
+        name="nombre"
+        placeholder="Ingrese su Nombre"
+        pattern="[A-Za-z]+"
+        required
+        >
+    
+        <!-- El PATTERN solo hace la validación al momento de enviar el formulario -->
+        <br>
+        <!-- TAREA 2: Verificar que el campo de edad solo permita números entre 1 y 80, usando min="1" y max="80". -->
+
+        <label for="input-edad">
+            Edad
+        </label>    
+        <input 
+        type="number"
+        id="input-edad"
+        name="edad"
+        placeholder="Ingrese su edad"
+        min="1"
+        max="100"
+        required>
+
+        <br>
+
+        <!-- TAREA 3: Verificar que el campo de contraseña solo acepte contraseñas de entre 6 y 12 caracteres, usando minlength="6" y maxlength="12". -->
+
+        <label for="input-password">
+            Contraseña
+        </label>
+        <input 
+        type="password"
+        id="input-password"
+        name="contraseña"
+        placeholder="Ej. correo@gmail.com"
+        minlength="6"
+        maxlength="12"
+        required>
+
+        <br>
+
+        <button type="submit">ENVIAR</button>
+
+    </form> 
+</body>
+</html>
